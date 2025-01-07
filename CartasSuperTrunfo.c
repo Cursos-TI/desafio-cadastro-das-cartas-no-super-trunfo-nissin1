@@ -10,7 +10,7 @@ int main() {
     char nome[20]; // Nome da cidade
     int populacao; // População total da cidade
     float area; // Área total da cidade
-    double pib; // Valor do Produto Interno Bruto da cidade
+    float pib; // Valor do Produto Interno Bruto da cidade
     int pontos_turisticos; // Quantidade de pontos turísticos da cidade
 
     printf("Olá, seja bem vindo ao editor de cartas do Super Trunfo - Edição Países!\n");
@@ -27,14 +27,14 @@ int main() {
     scanf("%fkm²", &area); // Aqui o usuário digita o valor da área da cidade
 
     printf("Insira o valor do Produto Interno Bruto (PIB) desta cidade:\n");
-    scanf("R$%f", &pib); // Aqui o usuário digita o número do PIB da cidade
+    scanf("%f", &pib); // Aqui o usuário digita o número do PIB da cidade
     
     printf("Por fim, insira a quantidade de pontos turísticos da cidade\n");
     scanf("%d", &pontos_turisticos); // Aqui o usuário digita o número de pontos turísticos da cidade
     printf("Verifique as informações da sua carta:\n");
 
     // Exibição dos dados digitados pelo usuário
-    printf("Código da Cidade: %s Nome da Cidade: %s\n", codigo, nome);
+    printf("Código: %s Nome da Cidade: %s\n", codigo, nome);
     printf("População: %d\n", populacao);
     printf("Área em km²: %.2f\n", area);
     printf("PIB: R$%.2f\n", pib);
